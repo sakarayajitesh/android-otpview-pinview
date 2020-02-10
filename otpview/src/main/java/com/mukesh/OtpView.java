@@ -222,7 +222,7 @@ public class OtpView extends AppCompatEditText {
     if (start != text.length()) {
       moveSelectionToEnd();
     }
-    if (text.length() == otpViewItemCount && onOtpCompletionListener != null) {
+    if (onOtpCompletionListener != null) {
       onOtpCompletionListener.onOtpCompleted(text.toString());
     }
     makeBlink();
